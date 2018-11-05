@@ -5,7 +5,7 @@ currentVersion=$CURRENT_FIREFOX_VERSION
 
 if [[ "$currentVersion" == *"$1"* ]]; then
   echo 'Firefox' "$1" 'present locally. Activating it.'
-#run
+  /opt/firefox/$1/firefox/firefox
   else
     # if it isn't we need to check if we have it locally
     mkdir -p /tmp/usefirefox
